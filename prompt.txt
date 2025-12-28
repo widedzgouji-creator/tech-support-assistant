@@ -1,0 +1,125 @@
+# Conversation History
+
+## Context
+User requested to build an AI-powered technical support assistant using Python, RAG, and Docker. Project evolved from basic TUI to Flask web interface with confidence scoring, uncertainty detection, and logging.
+
+---
+
+## Messages
+
+### Message 1
+build an AI-powered technical support assistant capable of answering questions about a chosen software/product using: a Retrieval-Augmented Generation (RAG) pipeline, embeddings + vector database, LLM generation, optional re-ranking, a simple support-style chat interface. I want python, uv, docker, tui
+
+**Context**: Initial project request - setup RAG system with TUI
+
+---
+
+### Message 2
+i want chromadb on docker
+
+**Context**: Specify ChromaDB as vector database with Docker deployment
+
+---
+
+### Message 3
+ingest in assets/laravel there is laravel documentation, you can use them
+
+**Context**: Request to ingest Laravel documentation from assets folder
+
+---
+
+### Message 4
+update .env and add the github token
+
+**Context**: Configure environment variables for GitHub Models API
+
+---
+
+### Message 5
+i want a chatbot with streaming on the ui (cant)
+
+**Context**: Request streaming responses in UI (later abandoned for Streamlit)
+
+---
+
+### Message 6
+try streamlit
+
+**Context**: Switch from Textual TUI to Streamlit web framework
+
+---
+
+### Message 7
+make it work nicely
+
+**Context**: Fix UI issues and improve chat functionality
+
+---
+
+### Message 8
+fix the input, dont scroll
+
+**Context**: Fix scrolling issue with chat input staying at bottom
+
+---
+
+### Message 9
+remove adminer
+
+**Context**: Remove ChromaDB Admin UI from docker-compose
+
+---
+
+### Message 10
+whats left to implement
+
+**Context**: Review missing features from README spec
+
+---
+
+### Message 11
+2, 3, 4 sounds easy to implement do them. explain 1 and 2
+
+**Context**: Request implementation of confidence scoring, uncertainty detection, human escalation, and logging system
+
+---
+
+### Message 12
+redesign the ui, have a debug mode on the right for information, the left should be good ui/ux panel of conversation
+
+**Context**: Major UI redesign - clean conversation left, debug panel right
+
+---
+
+### Message 13
+i dont want to see the sources and confidence on the left, all of that appears on the right, and the input is messy, rewrite it, in a way thats alwats at the top
+
+**Context**: Clean up left panel (remove clutter), move input to top
+
+---
+
+### Message 14
+its shit, use html instead and rewrite the frontend
+
+**Context**: Complete rewrite from Streamlit to Flask with HTML/CSS/JS
+
+---
+
+### Message 15
+nice, now dump. a latex report to report.tex based on the spec
+
+**Context**: Generate comprehensive LaTeX academic report
+
+---
+
+### Message 16
+progress, can you make the input at the bottom, and the messages markdown friendly, and when you click on a resource it shows the content with markdown?
+
+**Context**: Final UI polish - input at bottom, markdown rendering, clickable sources
+
+---
+
+### Message 17
+write a good readme to get started with the project, then zip it all (except for report.txt and the git history), then write to a prompt.txt all the messages I have sent one by one with a quick context one liner
+
+**Context**: Create comprehensive README, package project, document conversation history

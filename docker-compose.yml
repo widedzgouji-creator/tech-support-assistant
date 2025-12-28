@@ -1,0 +1,15 @@
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: tech-support-chromadb
+    ports:
+      - "8000:8000"  # API port
+    volumes:
+      - chromadb_data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=${ANONYMIZED_TELEMETRY:-TRUE}
+
+volumes:
+  chromadb_data:
+    driver: local
